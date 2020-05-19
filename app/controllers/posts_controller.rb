@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   def index
+    if params[:author_id]
     @posts = Post.all
   end
 

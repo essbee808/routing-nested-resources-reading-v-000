@@ -3,7 +3,7 @@ class AuthorsController < ApplicationController
   def posts_index
     @author = Author.find(params[:id])
     @posts = @author.posts
-    render template: 'posts/index'
+    render template: 'posts/index' # since we're telling render that we're using a template, we don't need to include .html.erb; rails figured it out
   end
 
   def post

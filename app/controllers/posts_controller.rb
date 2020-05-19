@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
   def index
     if params[:author_id]
+    end
     @posts = Post.all
   end
 

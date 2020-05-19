@@ -9,7 +9,7 @@ class AuthorsController < ApplicationController
   def post
     @author = Author.find(params[:id])
 
-    #notice that because ids are unique by table we can go directly to 
+    #notice that because ids are unique by table we can go directly to
     # Post.find - no need for @author.posts.find...
   end
 
